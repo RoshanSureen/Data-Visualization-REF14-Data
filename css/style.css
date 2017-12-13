@@ -1,0 +1,115 @@
+/*
+// Author: Roshan Sureen
+// Date: 13/11/17
+//
+// Purpose: This is the main style file responsible for styling the layouts and overall look
+// of the application.
+// Please remember to download bootstrap.min.css file as this application uses bootstrap to 
+// provide extra styling
+*/
+
+body {
+  padding-top: 50px;
+}
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar-fixed-top {
+  border: 0;
+}
+.group-row {
+    
+    background: #F7F2F2;
+}
+h4#group-text {
+  width: 100%;
+  text-align: center;
+}
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+.uoa {
+  text-align: center;
+}
+
+text {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    /* pointer-events: none; */
+}
+
+.classCountry.SCT {
+    fill: thistle;
+}
+
+.classCountry.WLS {
+    fill: lightsteelblue;
+}
+
+.classCountry.NIR {
+    fill: paleturquoise;
+}
+
+.classCountry.ENG {
+    fill: pink;
+}
+
+.classCountry.IRL {
+    fill: lightgrey;
+}
+
+.classTown text {
+    fill: grey;
+}
+
+.classTown circle {
+    stroke: grey;
+    fill:  rgb(0, 0, 0) !important;
+    opacity: 0.4;
+}
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 110px;
+  height: 55px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+.classLink {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+} 
+.classNode text {
+  fill: steelblue;
+  font: 10px sans-serif;
+} 
+.classNode circle {
+  stroke: steelblue;
+  fill: pink;
+  stroke-width: 1.5px;
+}
+.classNode {
+  cursor: pointer;
+}
+
+
+  

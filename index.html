@@ -1,0 +1,120 @@
+<!--
+  // Author: Roshan Sureen
+  // Date: 13/11/17
+  //
+  // Purpose: This is the university researchers main html file that displays the
+  // layouts based on the quality of research outputs. It calls main_UR.js file
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Visualization of REF2014 Data in D3.js</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- <script type="text/javascript" src="node_modules/d3/build/d3.js"></script> -->
+  <script type="text/javascript" src="d3/d3.js"></script>
+
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+
+  <script type="text/javascript" src="js/map.js"></script>
+  <script type="text/javascript" src="js/treeRender.js"></script>
+  <script type="text/javascript" src="js/tree.js"></script>
+  <script type="text/javascript" src="js/pie_Render.js"></script>
+  <script type="text/javascript" src="js/pie.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Data Visualization with D3.js</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="index.html">University Researchers</a>
+          </li>
+          <li>
+            <a href="universityManagement.html" >University Management</a>
+          </li>
+          <li>
+            <a href="industryCollaborators.html" >Industry Collborators</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row group-row">
+      <h4 id="group-text">REF 2014 Data for
+        <b id="change-text1"></b>
+        focusing on
+        <b id="change-text2"></b>
+      </h4>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div id="map"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="treeDiv"></div>
+      </div>
+      <div class="col-md-4">
+        <h5 class="uoa">Unit of Assesement for
+          <span id="uni"></span>
+        </h5>
+        <div id="pieDiv1"></div>
+        <h5 class="uoa">Quality of Reserach for UOA number:
+          <span id="uoa"></span>
+        </h5>
+        <div id="pieDiv2"></div>
+        <div id="pieText">
+          <h4 class="university-name"></h4>
+          <h6>Unit of Assesement Name:
+            <span id="uoa_name"></span>
+          </h6>
+          <h6>FTE Submitted Score:
+            <span id="fte"></span>
+          </h6>
+          <h6>
+            <span id="star"></span>
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/main_UR.js"></script>
+  <script>
+    'use strict';
+    document.getElementById('change-text1').innerHTML = 'UNIVERSITY RESEARCHERS';
+    document.getElementById('change-text2').innerHTML = 'quality of research OUTPUTS';
+    startApplicationForUR('Outputs');
+
+  </script>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+</body>
+
+</html>
